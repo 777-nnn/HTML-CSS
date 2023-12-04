@@ -1,0 +1,229 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  opacity: 70%;
+}
+
+header{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  margin: 0 auto;
+  padding: 0;
+  z-index: 1;
+}
+.header-left img{
+  margin-top: 30px;
+  margin-left: 36px;
+  width: 185px;
+}
+.header-right{
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+  font-size: 10px;
+  line-height: 5px;
+  margin: 0 40px;
+  text-align: center;
+}
+.header-links{
+  margin-top: 15px;
+}
+.header-links p:first-of-type{
+  font-size: 12px;
+  font-weight: bold;
+}
+.header-counseling{
+  border-radius: 40px;
+  background-color: orange;
+  color: white;
+  margin: 15px auto auto;
+  padding:18px;
+  font-size: 12px;
+}
+.header-menu-icon{
+  display: none;
+}
+.header-menu-icon p{
+  font-size: 15px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+main{
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+.background-responsive{
+  display: none;
+  width: 100%;
+}
+.summary-wrapper{
+  max-width: 1140px;
+  margin: 0 auto 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.summary-contents{
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 80px;
+}
+h1{
+  font-size: 38px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+h1 span{
+  display: block;
+}
+.summary-contents-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.summary-contents-img-edge{
+  width: 25%;
+}
+.summary-contents-img-center{
+  width: 40%;
+}
+.summary-contents-counseling{
+  display: block;
+  border-radius: 40px;
+  background-color: orange;
+  color: white;
+  padding: 15px 60px;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.summary-notes{
+  color: gray;
+  font-size: 11px;
+}
+.summary-notes a{
+  color: gray;
+  cursor: pointer;
+}
+
+.movie-wrapper{
+  background-color: orange;
+  padding: 45px;
+}
+.movie-contents{
+  display: flex;
+  flex-direction: row;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.movie-contents-video{
+  width: 50%;
+}
+h2{
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+h2 span{
+  font-weight: normal;
+}
+.movie-contents-text{
+  color: white;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+.movie-link{
+  display: flex;
+  justify-content: left;
+}
+.movie-link-img{
+  width: 30%;
+}
+
+@media screen and (max-width:1080px) {
+  header{
+    position: fixed;
+    background-color: white;
+  }
+  .header-left img{
+    margin-top: 20px;
+  }
+  .header-right .header-links,.header-counseling{
+    display:none;
+  }
+  .header-right{
+    margin: 10px 50px;
+  }
+  .header-menu-icon{
+    display: block;
+  }
+}
+@media screen and (max-width:1024px){
+  .movie-contents{
+    flex-direction: column;
+  }
+  .movie-contents-video{
+    margin: 0 auto;
+    width: 75%;
+  }
+  .movie-link{
+    justify-content: center;
+  }
+}
+@media screen and (max-width:767px){
+
+  .header-right{
+    margin: 8px 20px;
+  }
+  .header-left img{
+    margin-top: 16px;
+    margin-left: 20px;
+    width: 148px;
+  }
+
+  main{
+    background-image: none;
+    padding: 50px 0 0;
+  }
+  .background-responsive{
+    display: block;
+  }
+  .summary-wrapper{
+    max-width: none;
+    margin-top: -40vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .summary-contents{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  h1{
+    font-size: 25px;
+  }
+
+  .movie-wrapper{
+    padding: 25px;
+  }
+  .movie-contents-text{
+    padding-left: 0;
+  }
+  .movie-contents-video{
+    width: 100%;
+  }
+}
